@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Travel Blog</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef5f9;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #0e2f44;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 20px;
+      color: #444;
+    }
+    form {
+      margin-top: 20px;
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    label, select, input, textarea {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Travel Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About My Travel Journey</h2>
+      <p>I’ve been traveling across the globe exploring beautiful landscapes, cultures, and people.</p>
+      <img src="travel.jpg" alt="Travel Image" width="100%">
+    </section>
+
+    <section>
+      <h2>Top 3 Destinations</h2>
+      <table>
+        <tr>
+          <th>Country</th>
+          <th>Best Time to Visit</th>
+          <th>Language</th>
+        </tr>
+        <tr>
+          <td>Japan</td>
+          <td>March - May</td>
+          <td>Japanese</td>
+        </tr>
+        <tr>
+          <td>France</td>
+          <td>April - June</td>
+          <td>French</td>
+        </tr>
+        <tr>
+          <td>India</td>
+          <td>October - March</td>
+          <td>Hindi, English</td>
+        </tr>
+      </table>
+    </section>
+
+    <blockquote>"The world is a book, and those who do not travel read only one page." – Saint Augustine</blockquote>
+
+    <section>
+      <h2>Trip Video</h2>
+      <video width="100%" controls>
+        <source src="trip.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Background Music</h2>
+      <audio src="bgmusic.mp3" autoplay loop muted></audio>
+    </section>
+
+    <section>
+      <h2>Travel With Me!</h2>
+      <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="destination">Destination Interest:</label>
+        <select id="destination" name="destination">
+          <option>Japan</option>
+          <option>France</option>
+          <option>India</option>
+        </select>
+
+        <p>Type of Traveler:</p>
+        <label><input type="radio" name="type" value="Solo"> Solo</label>
+        <label><input type="radio" name="type" value="Group"> Group</label>
+        <label><input type="radio" name="type" value="Family"> Family</label>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 My Travel Blog. All rights reserved.
+  </footer>
+
+</body>
+</html>

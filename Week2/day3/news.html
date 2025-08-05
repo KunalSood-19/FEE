@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ModernNews - Home</title>
+  <style>
+    :root {
+      --primary-color: #1e3a8a;
+      --accent-color: #f59e0b;
+      --bg-color: #000000;
+      --text-color: #000000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      /* box-sizing: border-box; */
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px 20px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #4b5563;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DailyNews</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">World</a>
+      <a href="#">Tech</a>
+      <a href="#">Business</a>
+      <a href="#">Health</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <img src="" alt="News Image" />
+        <div class="card-content">
+          <h2>NASA Announces Moon Mission Updates</h2>
+          <p>The Artemis program continues as NASA outlines next-phase strategies for a permanent lunar base.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="" alt="News Image" />
+        <div class="card-content">
+          <h2>AI Chatbots to Revolutionize Education</h2>
+          <p>EdTech startups introduce GPT-powered assistants to support personalized learning across the globe.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="" alt="News Image" />
+        <div class="card-content">
+          <h2>Global Economy Shows Signs of Recovery</h2>
+          <p>Markets rebound after a challenging fiscal quarter. Analysts predict stronger growth ahead.</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+</body>
+</html>
